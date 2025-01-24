@@ -27,7 +27,118 @@
 * write your names at the bottom
 * take a screenshot at laptop and Moto G4 device sizes in Devtools
 */
-
 body {
+  background-color: #272838;
   font: 100% "Poppins", sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  max-width: 1430px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+main {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.header__title {
+  color: #ECF8FD;
+  font-size: 25px;
+  font-weight: 600px;
+}
+
+.header__text {
+  color: #ECF8FD;
+  font-size: 20px;
+  font-weight: 500px;
+  margin-top: -10px;
+}
+
+.main__inner{
+  display: flex;
+  justify-content: center;
+  column-gap: 100px;
+}
+
+.main__inner-item {
+  background-color: #AFCBD5;
+  -webkit-box-shadow: 0px 0px 22px 0px rgba(255,255,255,1);
+  -moz-box-shadow: 0px 0px 22px 0px rgba(255,255,255,1);
+  box-shadow: 0px 0px 22px 0px rgba(255,255,255,1);
+  padding: 20px;
+  max-width: 300px;
+}
+
+.main__item-top {
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+}
+
+.main__item-title {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.main__item-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.main__item-list {
+  display: flex;
+  flex-direction: column;
+  margin-left: -20px;
+}
+
+.main__item-item {
+  font-size: 13px;
+}
+
+.main__item-item:nth-child(1) {
+  margin-left: -3px;
+}
+
+footer {
+  padding-top: 50px;
+  text-align: center;
+  color: #ECF8FD;
+  text-transform: uppercase;
+}
+
+@media (max-width: 800px) {
+  .main__inner{
+    column-gap: 50px;
+    margin-top: -50px;
+  }
+
+  footer {
+    padding-top: 0px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header__text {
+    text-align: center;
+  }
+
+  .main__inner{
+    column-gap: 20px;
+    flex-direction: column;
+    row-gap: 30px;
+    align-items: center;
+  }
+
+  .main__inner-item {
+    width: 100%;
+  }
 }
